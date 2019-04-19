@@ -5,28 +5,28 @@ body {
 
 }
 
-.landing-UI {
-  color: #eeffc9;
-  font-family: fantasy;
-  position: absolute;
-  text-align: center;
-  font-size: 20px;
+body, html {
+  height: 100%;
+  margin: 0;
 }
 
-#landing-dungeon-entrance {
-  max-width: 100%;
-  height: auto;
+.landing-UI {
+  background-image: url("dungeon.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #landing-title {
-  top: 30%;
-  left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
+  top: 30%;
+  left: 50%;
 }
 
 h1 {
-  font-size: 200px;
+  font-size: 100px;
   font-family: fantasy;
   color: inherit;
 }
@@ -406,7 +406,7 @@ p#first-text {
 
 .icon {
   height: 100px;
-  weight: 100px;
+  width: 100px;
   margin-bottom: 40px;
   margin-left: 20px;
 }
