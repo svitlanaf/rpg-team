@@ -149,11 +149,13 @@ h2{
   font-family: Garamond, serif;
   text-decoration: none;
   vertical-align: middle;
-  position: relative;
+  position: absolute;
   display: block;
   width: 220px;
   height: 50px;
   padding: 0 0 0 0;
+  top: 88%;
+  left: 76%;
 }
 
 .start-UI {
@@ -178,11 +180,13 @@ h2{
   font-family: Garamond, serif;
   text-decoration: none;
   vertical-align: middle;
-  position: relative;
+  position: absolute;
   display: block;
   width: 220px;
   height: 50px;
   padding: 0 0 0 0;
+  top: 88%;
+  right: 42%;
 }
 
 .panel {
