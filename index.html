@@ -107,7 +107,7 @@
       <form id="create-character">
         <div class="form-group">
           <label for="character-name">Name:</label>
-          <input type="text" class="form-control" id="character-name">
+          <input type="text" class="form-control" id="character-name" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
         </div>
         <button type="button" class="btn" id="start-game">Enter Dungeon</button>
       </form>
