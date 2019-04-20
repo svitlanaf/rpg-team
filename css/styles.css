@@ -17,6 +17,7 @@ body, html {
 }
 
 h1#landing-title {
+  display: block;
   padding: 0 0 0 0;
   margin: 0 0 0 0;
   font-size: 100px;
@@ -28,14 +29,15 @@ h1#landing-title {
 }
 
 p#landing-paragraph {
+  display: block;
   padding: 0 0 0 0;
   margin: 0 0 0 0;
   font-size: 16px;
   font-family: fantasy;
   color: inherit;
-  position: absolute;
-  left: 50px;
-  top: 510px;
+  position: fixed;
+  left: 5%;
+  top: 82%;
 }
 
 h6.name {
@@ -43,12 +45,55 @@ h6.name {
   font-family: fantasy;
 }
 
-h1#select-page {
+h2{
+  font-family: fantasy;
   font-size: 50px;
   color: inherit;
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* resize characters images */
+.character-select img {
+  display: block;
+  max-width: 650px;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+}
+
+.col-md-8 {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  position: absolute;
+  /* left: 80%%; */
+  right: 3%;
+  top: 15%;
+}
+
+#archer, #wizard, #warrior {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  display: block;
+  max-width: 850px;
+  max-height: 650px;
+}
+
+.col-md-4 {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  left: 3%;
+  top: 4%;
+}
+
+.character-image {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
 }
 
 .btn:focus,
@@ -62,7 +107,7 @@ h1#select-page {
   -webkit-box-shadow: 1px 1px 28px 2px #eeffc9;
 }
 
-#start-button, #start-game {
+#start-button {
   border-top: 1px solid #f4f797;
   background: #aba387;
   background: -webkit-gradient(linear, left top, left bottom, from(#f5f2a4), to(#aba387));
@@ -79,33 +124,60 @@ h1#select-page {
   font-family: Garamond, serif;
   text-decoration: none;
   vertical-align: middle;
-  position: absolute;
-  /* padding: 0 0 0 0;
-  margin: 0 0 0 0; */
-  left: 1000px;
-  top: 550px;
+  left: 83%;
+  position: relative;
+  top: 86%;
+  display: block;
 }
 
 #start-game {
-  margin-top: 70px;
+  border-top: 1px solid #f4f797;
+  background: #aba387;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f5f2a4), to(#aba387));
+  background: -webkit-linear-gradient(top, #f5f2a4, #aba387);
+  background: -moz-linear-gradient(top, #f5f2a4, #aba387);
+  background: -ms-linear-gradient(top, #f5f2a4, #aba387);
+  background: -o-linear-gradient(top, #f5f2a4, #aba387);
+  padding: 13.5px 27px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
+  color: #292129;
+  font-size: 20px;
+  font-family: Garamond, serif;
+  text-decoration: none;
+  vertical-align: middle;
+  position: relative;
+  display: block;
+}
+
+.start-UI {
+  display: block;
+}
+
+#back {
+  border-top: 1px solid #f4f797;
+  background: #aba387;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f5f2a4), to(#aba387));
+  background: -webkit-linear-gradient(top, #f5f2a4, #aba387);
+  background: -moz-linear-gradient(top, #f5f2a4, #aba387);
+  background: -ms-linear-gradient(top, #f5f2a4, #aba387);
+  background: -o-linear-gradient(top, #f5f2a4, #aba387);
+  padding: 13.5px 27px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
+  color: #292129;
+  font-size: 20px;
+  font-family: Garamond, serif;
+  text-decoration: none;
+  vertical-align: middle;
+  position: relative;
+  display: block;
 }
 
 .panel {
   margin: 50px;
-}
-
-
-.start-UI {
-  display: none;
-}
-
-/* resize characters images */
-.character-select img {
-  display: block;
-  max-width: 800px;
-  max-height: 650px;
-  width: auto;
-  height: auto;
 }
 
 .dungeon-UI {
@@ -333,10 +405,6 @@ li.section span.title {
 p {
   font-family: Garamond, serif;
   font-size: 20px;
-}
-
-p#first-text {
-  font-family: fantasy;
 }
 
 .form-control {

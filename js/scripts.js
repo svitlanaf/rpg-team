@@ -1225,10 +1225,11 @@ printFloor(dungeonOne);
 $(document).ready(function() {
   $("#box8").addClass("current");
   $("#character-img").hide();
-  $("#archer-info").hide();
-  $("#wizard-info").hide();
-  $("#warrior-info").hide();
-  $("#select-page").hide();
+  $("#archer-info-image").hide();
+  $("#wizard-info-image").hide();
+  $("#warrior-info-image").hide();
+  $(".character-select").hide();
+  $(".start-UI").hide();
 
   $('.clickable').click(function() {
     var value = $(this).html();
@@ -1239,7 +1240,7 @@ $(document).ready(function() {
   $("#start-button").click(function() {
     $(".landing-UI").hide();
     $("#character-img").show();
-    $("#select-page").show();
+    $(".character-select").show();
   });
 
   $('.character-image').click(function() {
@@ -1247,30 +1248,37 @@ $(document).ready(function() {
     // console.log('You clicked on: '+myImg);
     if (myImg == "Archer") {
       playerOne.job = "archer";
-      $("#wizard-info").hide()
-      $("#warrior-info").hide()
-      $("#archer-info").fadeIn()
-      $(".start-UI").show();
+      $("#wizard-info-image").hide()
+      $("#warrior-info-image").hide()
+      $(".character-select").hide();
+      $("#archer-info-image").fadeIn()
+      $(".start-UI").fadeIn();
     }
     if (myImg == "Wizard") {
       playerOne.job = "wizard";
-      $("#archer-info").hide()
-      $("#warrior-info").hide()
-      $("#wizard-info").fadeIn()
-      $(".start-UI").show();
+      $(".character-select").hide();
+      $("#archer-info-image").hide()
+      $("#warrior-info-image").hide()
+      $("#wizard-info-image").fadeIn()
+      $(".start-UI").fadeIn();
     }
     if (myImg == "Warrior") {
       playerOne.job = "warrior";
-      $("#archer-info").hide()
-      $("#wizard-info").hide()
-      $("#warrior-info").fadeIn()
-      $(".start-UI").show();
+      $(".character-select").hide();
+      $("#archer-info-image").hide()
+      $("#wizard-info-image").hide()
+      $("#warrior-info-image").fadeIn()
+      $(".start-UI").fadeIn();
     }
   });
 
   // To have battle with a particular enemy - change name in enemy[type]
   $("#start-game").click(function(event) {
     event.preventDefault();
+    $("#archer-info-image").hide()
+    $("#wizard-info-image").hide()
+    $("#warrior-info-image").hide()
+    $(".start-UI").hide();
     combatBegin(playerOne, enemyImp);
   });
   $("#attack-combat").click(function(event) {
