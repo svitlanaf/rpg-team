@@ -32,7 +32,7 @@ p#landing-paragraph {
   display: block;
   padding: 0 0 0 0;
   margin: 0 0 0 0;
-  font-size: 16px;
+  font-size: 14px;
   font-family: fantasy;
   color: inherit;
   position: fixed;
@@ -53,7 +53,7 @@ h2{
   padding: 0 0 0 0;
   margin: 0 0 0 0;
   position: absolute;
-  top: 85%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -63,37 +63,36 @@ h2{
   display: block;
   max-width: 650px;
   max-height: 400px;
-  width: auto;
-  height: auto;
+  margin-top: 50px;
+  margin-left: 25px;
 }
 
 .col-md-8 {
   padding: 0 0 0 0;
-  margin: 0 0 0 0;
+  left: 500px;
   position: absolute;
-  /* left: 80%%; */
-  right: 3%;
-  top: 15%;
+  width: 900px;
 }
 
-#archer, #wizard, #warrior {
+#wizard, #warrior {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
   display: block;
   max-width: 850px;
   max-height: 650px;
+  position: absolute;
+  top: 5%;
 }
 
-.col-md-4 {
+#archer {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
-  left: 3%;
-  top: 4%;
-}
-
-.character-image {
-  padding: 0 0 0 0;
-  margin: 0 0 0 0;
+  display: block;
+  max-width: 850px;
+  max-height: 650px;
+  position: absolute;
+  top: 5%;
+  left: 15%;
 }
 
 .btn:focus,
@@ -123,11 +122,14 @@ h2{
   font-size: 20px;
   font-family: Garamond, serif;
   text-decoration: none;
-  vertical-align: middle;
-  left: 83%;
+  vertical-align: super;
+  left: 78%;
   position: relative;
   top: 86%;
   display: block;
+  width: 220px;
+  height: 50px;
+  padding: 0 0 0 0;
 }
 
 #start-game {
@@ -149,11 +151,15 @@ h2{
   vertical-align: middle;
   position: relative;
   display: block;
+  width: 220px;
+  height: 50px;
+  padding: 0 0 0 0;
 }
 
 .start-UI {
   display: block;
 }
+
 
 #back {
   border-top: 1px solid #f4f797;
@@ -174,10 +180,15 @@ h2{
   vertical-align: middle;
   position: relative;
   display: block;
+  width: 220px;
+  height: 50px;
+  padding: 0 0 0 0;
 }
 
 .panel {
-  margin: 50px;
+  margin-right: 150px;
+  margin-left: 10px;
+  margin-top: 50px;
 }
 
 .dungeon-UI {
@@ -289,6 +300,7 @@ h2{
   width: 220px;
   height: 50px;
   margin: 5px;
+  padding: 0 0 0 0;
 }
 
 #northButton, #southButton, #eastButton, #westButton {
@@ -311,6 +323,7 @@ h2{
   width: 220px;
   height: 50px;
   margin: 5px;
+  padding: 0 0 0 0;
 }
 
 #player-name-display {
@@ -382,12 +395,22 @@ input[type=text] {
   border-bottom: 2px solid #eeffc9;
   background-color: transparent;
   color: white;
+  width: 300px;
 }
 
 input[type=text]:active, input[type=text]:focus {
   background-color: transparent;
   box-shadow: 1px 1px 28px 2px #eeffc9;
   -webkit-box-shadow: 1px 1px 28px 2px #eeffc9;
+}
+
+.form-group {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  display: block;
+  position: fixed;
+  top: 60%;
+  left: 69%;
 }
 
 ul {
@@ -405,18 +428,6 @@ li.section span.title {
 p {
   font-family: Garamond, serif;
   font-size: 20px;
-}
-
-.form-control {
-  width: 526px;
-}
-
-#character-img {
-  margin-top: 15px;
-}
-
-#create-character {
-  margin-left: 50px;
 }
 
 .box.current {

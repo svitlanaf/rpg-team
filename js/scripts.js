@@ -1272,6 +1272,14 @@ $(document).ready(function() {
     }
   });
 
+  $("#back").click(function() {
+    $("#archer-info-image").hide()
+    $("#wizard-info-image").hide()
+    $("#warrior-info-image").hide()
+    $(".start-UI").hide();
+    $(".character-select").fadeIn();
+  });
+
   // To have battle with a particular enemy - change name in enemy[type]
   $("#start-game").click(function(event) {
     event.preventDefault();
