@@ -1,8 +1,6 @@
 body {
   color: #eeffc9;
   background-color: #181816;
-  /* font-family: fantasy; */
-
 }
 
 body, html {
@@ -18,17 +16,26 @@ body, html {
   background-size: cover;
 }
 
-#landing-title {
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 30%;
-  left: 50%;
-}
-
-h1 {
+h1#landing-title {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
   font-size: 100px;
   font-family: fantasy;
   color: inherit;
+  position: absolute;
+  left: 800px;
+  top: 120px;
+}
+
+p#landing-paragraph {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  font-size: 16px;
+  font-family: fantasy;
+  color: inherit;
+  position: absolute;
+  left: 50px;
+  top: 510px;
 }
 
 h6.name {
@@ -72,7 +79,11 @@ h1#select-page {
   font-family: Garamond, serif;
   text-decoration: none;
   vertical-align: middle;
-  margin-bottom: 50px;
+  position: absolute;
+  /* padding: 0 0 0 0;
+  margin: 0 0 0 0; */
+  left: 1000px;
+  top: 550px;
 }
 
 #start-game {
