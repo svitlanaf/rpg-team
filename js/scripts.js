@@ -1272,10 +1272,6 @@ $(document).ready(function() {
     }
   });
 
-  // $("#retry").click(function(event) {
-  //   document.getElementById("submit_info").reset();
-  //   $('input[type=radio]').prop('checked', false);
-
     $("#back").click(function(event) {
     document.getElementById("create-character").reset();
     $("#archer-info-image").hide()

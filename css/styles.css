@@ -41,11 +41,11 @@ p#landing-paragraph {
 }
 
 h6.name {
-  font-size: 40px;
+  font-size: 30px;
   font-family: fantasy;
 }
 
-h2{
+h2 {
   font-family: fantasy;
   font-size: 50px;
   color: inherit;
@@ -53,7 +53,7 @@ h2{
   padding: 0 0 0 0;
   margin: 0 0 0 0;
   position: absolute;
-  top: 80%;
+  top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -81,7 +81,7 @@ h2{
   max-width: 850px;
   max-height: 650px;
   position: absolute;
-  top: 5%;
+  top: 8%;
 }
 
 #archer {
@@ -91,7 +91,7 @@ h2{
   max-width: 850px;
   max-height: 650px;
   position: absolute;
-  top: 5%;
+  top: 8%;
   left: 15%;
 }
 
@@ -162,7 +162,6 @@ h2{
   display: block;
 }
 
-
 #back {
   border-top: 1px solid #f4f797;
   background: #aba387;
@@ -195,8 +194,14 @@ h2{
   margin-top: 50px;
 }
 
+.panel-body {
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
 .dungeon-UI {
   display: none;
+  margin-top: 50px;
 }
 
 .combat-UI {
@@ -233,58 +238,62 @@ h2{
   padding: 0;
 }
 
-
 #combat-panel::-webkit-scrollbar {
-   width: 12px;
+  width: 12px;
 }
 
-#combat-panel::-webkit-scrollbar-track  {
-   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-   -webkit-border-radius: 10px;
-   border-radius: 10px;
+#combat-panel::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
 }
 
-#combat-panel::-webkit-scrollbar-thumb  {
-   -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background: #e8ebef;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
- }
+#combat-panel::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #e8ebef;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
 
- #map-panel {
-   color: white;
-   background-color: transparent;
-   width: inherit;
-   height: 230px;
-   overflow: auto;
-   display: flex;
-   flex-direction: column-reverse;
-   font-family: Garamond, serif;
-   font-size: 22px;
-   margin: 0;
-   padding: 0;
- }
+.map-panel {
+  color: white;
+  background-color: transparent;
+  width: 480px;
+  height: 300px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  font-family: Garamond, serif;
+  font-size: 22px;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  position: absolute;
+  background-color: transparent;
+  box-shadow: 1px 1px 28px 2px #5e97aa;
+  -webkit-box-shadow: 1px 1px 28px 2px #5e97aa;
+  /* padding: 10px; */
+  /* left: 70%;
+  bottom: 60%; */
+}
 
- #map-panel::-webkit-scrollbar {
-    width: 12px;
- }
+.map-panel::-webkit-scrollbar {
+  width: 12px;
+}
 
- #map-panel::-webkit-scrollbar-track  {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
- }
+.map-panel::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
 
- #map-panel::-webkit-scrollbar-thumb  {
-    -webkit-border-radius: 10px;
-     border-radius: 10px;
-     background: #e8ebef;
-     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
-  }
+.map-panel::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #e8ebef;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
 
-
-
-#attack-combat, #special-combat, #potion-combat, #run-combat, #northButton, #southButton, #eastButton, #westButton  {
+#attack-combat, #special-combat, #potion-combat, #run-combat, #northButton, #southButton, #eastButton, #westButton {
   border-top: 1px solid #f4f797;
   background: #aba387;
   background: -webkit-gradient(linear, left top, left bottom, from(#f5f2a4), to(#aba387));
@@ -343,25 +352,25 @@ h2{
 }
 
 #player-stats {
+  /* margin-top: 50px; */
   padding-left: 55px;
 }
 
 #enemy-stats {
+  /* margin-top: 50px; */
   padding-left: 440px;
 }
 
 #character-avatar {
-  padding-left: 80px;
-  margin-bottom: 50px;
-}
-
-#combat-images {
-  margin-top: 70px;
+  display: block;
+  max-width: 650px;
+  max-height: 400px;
 }
 
 #enemy-image {
-  padding-right: 80px;
-  margin-bottom: 50px;
+  display: block;
+  max-width: 650px;
+  max-height: 400px;
 }
 
 progress {
@@ -400,8 +409,8 @@ input[type=text] {
   background-color: transparent;
   color: white;
   width: 300px;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
 }
 
 input[type=text]:active, input[type=text]:focus {
@@ -437,12 +446,23 @@ p {
   font-size: 20px;
 }
 
+.col-md-3#map-log {
+  height: 300px;
+}
+
 .box.current {
-  background-color: gold;
+  background-color: #eeffc9;
+  border-radius: 8px;
+  box-shadow: 1px 1px 28px 2px #eeffc9;
+  -webkit-box-shadow: 1px 1px 28px 2px #eeffc9;
 }
 
 .box.explored {
-  background-color: white;
+  background-color: #5e97aa;
+  border-radius: 4px;
+  opacity: 0.3;
+  box-shadow: 1px 1px 28px 2px #5e97aa;
+  -webkit-box-shadow: 1px 1px 28px 2px #5e97aa;
 }
 
 .box.locked {
@@ -470,35 +490,46 @@ p {
 }
 
 .box {
-  background-color: #444;
+  background-color: #181816;
   border-radius: 5px;
   padding: 20px;
   font-size: 150%;
 }
 
 .wrapper {
-  width: 600px;
+  width: 650px;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(8, 70px);
   grid-template-rows: repeat(8, 70px);
   grid-auto-flow: column;
   align-content: center;
-  margin-top: 30px;
+  background-color: transparent;
+  box-shadow: 1px 1px 28px 2px #eeffc9;
+  -webkit-box-shadow: 1px 1px 28px 2px #eeffc9;
+  padding: 10px;
 }
 
 .container {
-  text-align: center;
+  text-align: left;
+  margin: 0 0 0 0;
+  padding-left: 50px;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 130px);
   grid-template-rows: repeat(3, 90px);
-
+  margin-left: 820px;
+  margin-bottom: 300px;
 }
+
+.panel-body#nav-buttons {
+  margin-top: -235px;
+}
+
 .grid-item {
-  text-align: center;
+  text-align: center
 }
 
 .icon {
